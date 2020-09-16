@@ -54,7 +54,7 @@ const TravelDetails = () => {
     <div className="ml-4 border p-5">
         <h1>Your traveling Details </h1>
     <form className={classes.container} noValidate>
-        <h5>From</h5>
+        <h5>Origin</h5>
         <Input defaultValue="Dhaka" required placeholder="Input the Departure"> </Input> 
         <Input defaultValue={detailsData.spotName} required placeholder="Input the Destination"> To</Input> <br/> <br/> <br/>
       <TextField
@@ -80,7 +80,7 @@ const TravelDetails = () => {
       /> <br/> <br/>
 
       <Route render = {() => (
-      <Button onClick = {()=>{history.push('/login')}} className="mt-4" variant = "primary"> Start the Journey</Button>
+      <Button onClick = {()=>{history.push('/login')}} className="mt-4" variant = "primary"> Start Booking</Button>
       )}/>
     </form>
     </div>
