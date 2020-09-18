@@ -17,6 +17,27 @@ const FakeData = [
         quickText: "Sreemangal is located at 24.3083°N 91.7333°E. It has 43,952 households and total area 450.74 km². It is bordered by Moulvibazar Sadar to the north, Tripura to the south, Kamalganj to the east and Chunarughat, Nabiganj and Bahubal to the west.",
         img: "https://i.ibb.co/sQVCwy1/Sreemongol.png"
        
+    },
+    {    id: 4,
+        spotName: "One bed Room",
+        category: 'HotelRoom',
+        quickText: "A room assigned to one person. May have one or more beds.",
+        img: "https://i.ibb.co/NTptJNG/Rectangle-26.png"
+       
+    },
+    {    id: 5,
+        spotName: "One bed Room But 2 person",
+        category: 'HotelRoom',
+        quickText: " A room assigned to two people. May have one or more beds",
+        img: "https://i.ibb.co/59tGjLg/Rectangle-27.png"
+       
+    },
+    {    id: 6,
+        spotName: "Room beside the See beach",
+        category: 'HotelRoom',
+        quickText: " A room that has two bed and from the window you can see see beaches",
+        img: "https://i.ibb.co/qg8P3B3/Rectangle-28.png"
+       
     }
 
 

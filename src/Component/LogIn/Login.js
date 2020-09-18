@@ -38,6 +38,7 @@ const Login = () => {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+        console.log(user);
         
       }).catch(function(error) {
         // Handle Errors here.
@@ -55,8 +56,9 @@ const Login = () => {
 
 
   return (
-    <div className="container">
+    <div className="container bg-dark" style={{alignItems:"center", padding:"20px"}}>
       <Validation/>
+      <p style={{color:"white"}}>Or..</p>
       <Button onClick={handleGoogleSignIn}> Sign in With your Google account </Button> <br/> <br/>
       <Button onClick={handleFaceBookSignIn}> Sign in With your Facebook account </Button>
     </div>
