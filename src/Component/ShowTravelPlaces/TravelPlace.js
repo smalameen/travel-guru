@@ -22,7 +22,7 @@ const TravelPlace = () => {
 
   return (
     <div>
-      <div className="d-flex justify-content-center">
+      <div className="ml-2 d-flex justify-content-center">
         
         
         <ButtonGroup aria-label="Second group">
@@ -30,8 +30,8 @@ const TravelPlace = () => {
             <Button variant="secondary">Booking Area</Button>
           </Link>
 
-          <Link to="/booking">
-          <Button variant="secondary">Booking</Button>
+          <Link>
+          <Button variant="secondary">Contact with us</Button>
         </Link>
 
           <Link to="/travelArea">

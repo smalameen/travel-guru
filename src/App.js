@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import "./App.css";
 import Header from "./Component/Header/Header";
 import TravelPlace from "./Component/ShowTravelPlaces/TravelPlace";
@@ -15,9 +15,12 @@ import Login from "./Component/LogIn/Login";
 import NoMatch from "./Component/NoMatch/NoMatch";
 import TravelDetails from "./Component/TravelDetails/TravelDetails";
 
+export const UserContext = createContext();
+
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div>
+    <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
       <Header></Header>
       {/* <TravelPlace></TravelPlace> */}
       <Router>
@@ -45,7 +48,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
+      </UserContext.Provider>
   );
 }
 

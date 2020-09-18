@@ -38,7 +38,7 @@ const Header = () => {
             <Typography href = "/login" variant="h6" className={classes.title}>
               Contact
             </Typography>
-            <Button  variant="h1" color="secondary">
+            <Button variant="h1" color="secondary">
               Login
             </Button>
           </Toolbar>
